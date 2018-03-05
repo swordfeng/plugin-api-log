@@ -1,0 +1,38 @@
+{
+    "name": "poi-plugin-api-log",
+    "version": "0.0.1",
+    "description": "a plugin for logging apis",
+    "main": "index.es",
+    "scripts": {
+        "reset": "git clean -f && git checkout .",
+        "prepack": "poi-util-transpile --sm --replace",
+        "postpublish": "npm run reset",
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/swordfeng/plugin-api-log.git"
+    },
+    "author": {
+        "name": "swordfeng",
+        "link": "https://github.com/swordfeng"
+    },
+    "license": "MIT",
+    "dependencies": {
+    },
+    "poiPlugin": {
+        "title": "API Log",
+        "description": "API Log",
+        "icon": "fa/pie-chart",
+        "priority": 10
+    },
+    "devDependencies": {
+        "babel-eslint": "^7.2.3",
+        "eslint": "^4.5.0",
+        "eslint-config-airbnb": "^15.1.0",
+        "eslint-plugin-import": "^2.7.0",
+        "eslint-plugin-jsx-a11y": "^5.1.1",
+        "eslint-plugin-react": "^7.3.0",
+        "poi-util-transpile": "^7.6.2"
+    }
+}
